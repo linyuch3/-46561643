@@ -1,7 +1,7 @@
 import { connect } from 'cloudflare:sockets';
 
 // 你要反代的小雅服务器地址（后端服务器地址），标准或非标端口均支持
-const upstream_url = "http://xxx.xxx.eu.org:5678";
+const upstream_url = "http://207.211.189.46:5678";
 
 // 1、需要走CF反代的播放链接地址关键字，走反代的前提是你连接CF的速度不能太慢，可自己想办法优选CF官方或第三方中转IP，太慢卡得难受别来喷我。
 // 2、IPv6直播转IPv4反代需要修改my.json/my_ext.json中直播url走小雅反代，例如原url是"https://xhdwc.tk/tvlive.txt"，需要修改为"https://你的小雅worker地址/proxy/https://xhdwc.tk/tvlive.txt"
